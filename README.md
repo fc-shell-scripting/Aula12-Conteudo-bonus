@@ -4,6 +4,9 @@
         - [Printf Com múltiplos dados no template](#printf-com-múltiplos-dados-no-template)
         - [formatação dos dados](#formatação-dos-dados)
     - [Operadores unários](#operadores-unários)
+    - [source](#source)
+    - [dialog](#dialog)
+        - [Exemplos](#exemplos)
 
 # Conteúdo Bônus
 
@@ -216,3 +219,36 @@ O operador _-f_ verifica se um arquivo existe. Existem outros operadore que voc�
 4. -w: Verifica se o arquivo é existe e possui permissão de gravação
 5. -x: Verifica se o arquivo é existe e possui permissão de execução
 6. -s: Verifica se o arquivo existe e o tamanho é maior que 0
+
+## source
+
+O comando source permite que sejam executados programas dentro do shell.
+Podemos usar este comando para importar configurações globais para os sscripts que criarmos
+
+```shell
+source arquivo.cfg
+```
+
+Este comando é o equivalente ao comando _._ (ponto)
+
+## dialog
+
+O programa dialog permite a criação de janelas em prompts, permitindo a criação de interfaces simples para a interação com o usuário.
+Vocẽ pode instalar o programa usando o instalador de pacotes do sistema operacional. 
+
+> Em sistemas _Debian_, ou baseados em _Debian_, o programa _whiptail_ pode ser usado para substituir o comando _dialog_.
+> O _whiptail_ pode já estar instalado.
+
+Você pode ler o manual do _dialog_, usando o comando:
+
+```shell
+man dialog
+```
+
+Mas, caso queira apenas um resumo de como montar uma determinada janela, use o comando
+
+```shell
+dialog -h
+```
+
+### Exemplos
